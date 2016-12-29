@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>The NetNinja CSS for beginers</title>
+     <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+</head>
+<body>
+<header>
+
+    <div class="container">
+        <div class="row">
+        <div class="col-xs-12">
+            <h1>CSS for Beginners</h1>
+        </div>
+        </div>
+    </div>
+
+
+</header>
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <div class="panel-title">Table of Contents</div>
+                    </div>
+                    <ol>
+                        <li>Introduction to CSS</li>
+                        <li>What is CSS?</li>
+                        <li>Default Browser Styles</li>
+                        <li>Basic CSS Syntax</li>
+                        <li>Inline and Embedded Styles</li>
+                        <li>External Stylesheets</li>
+                        <li>CSS Comments and Where to use them</li>
+                        <li>Targetting elements with CSS</li>
+                        <li>Targetting Classes and ID's</li>
+                        <li>CSS Conflicts & the Cascade</li>
+                        <li>Inheritance</li>
+                        <li>Selector Specificity</li>
+                        <li>The !important declaration</li>
+                        <li>Targetting Multiple Elements</li>
+                        <li>Descendent Selectors</li>
+                        <li>Child Selectors</li>
+                        <li>Adjacent Selectors</li>
+                        <li>Attribute Selectors</li>
+                        <li>Pseudo Selectors</li>
+                        <li>Hover, Active and Visited Effects</li>
+                        <li>First and Last Child Selectros</li>
+                        <li>nth Child Selectors</li>
+                        <li>n<sup>th</sup> of type selector</li>
+                        <li>Combining Selector</li>
+                        <li>The Universal Selector</li>
+                        <li>Font Size</li>
+                        <li>Font Family</li>
+                        <li>Text Decoration</li>
+                        <li>Font Weight</li>
+                        <li>Text Transform</li>
+                        <li>Text Color</li>
+                        <li>Styling Links</li>
+                        <li>Letter Spacing & Line Height</li>
+                        <li>Paragraph Spacing</li>
+                        <li>The Box Model</li>
+                        <li>Margins</li>
+                        <li>Padding</li>
+                        <li>Padding and Margin Long Hand</li>
+                        <li>Borders</li>
+                        <li>Block-level</li>
+                        <li>Width & Height</li>
+                        <li>Rounded Corners</li>
+                        <li>Background</li>
+                        <li>Background Shorthand</li>
+                        <li>Color</li>
+                        <li>Opacity</li>
+                        <li>CSS Gradients</li>
+                        <li>Box Shadow</li>
+                        <li>Browser Support</li>
+                        <li>CSS Website Build Part 1</li>
+                        <li>CSS Website Build Part 2</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12">
+                    <iframe width="400" height="200" src="https://www.youtube.com/embed/videoseries?list=PL4cUxeGkcC9gQeDH6xYhmO-db2mhoTSrT" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+</section>
+ <section>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <header>
+                    <h2>Part 1 Introduction to CSS</h2>
+                </header>
+                <section>
+                    <h4>What we will cover</h4>
+                    <ul>
+                        <li>What CSS is</li>
+                        <li>CSS Syntax</li>
+                        <li>Element, Class, ID Selectors</li>
+                        <li>Formatting Text</li>
+                        <li>The box model</li>
+                        <li>Put it all together</li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12">
+            <header>
+                <h2>Part 2What is CSS</h2>
+            </header>
+            <section>
+                <ul class="list-group">
+                    <li class="list-group-item-heading">CSS is Presentation</li>
+                    <li class="list-group-item-text">CSS Controls presentation of html</li>
+                </ul>
+            </section>
+        </div>
+    </div>
+</div>
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <header>
+                    <h2>Part 3 - Default browsers styles</h2>
+                </header>
+                <section>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <div class="panel-title">Browsers have Style</div>
+                        </div>
+                        <div class="panel-body">
+                            <ul>
+                                <li>All browsers apply basic styling to html: Margin, Padding, Font-size underlining Links etc</li>
+                                <li>Browsers apply their own default styles</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+</section>
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <header>
+        <h2>Part 4 Basic CSS Syntax</h2>
+    </header>
+    <section>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <panel-title>CSS is a Collection of Rules</panel-title>
+            </div>
+            <div class="panel-body">
+                <ul>
+                    <li>
+                        Each rule targets a specific tag or element on a HTML document
+                        <ul>
+                            <li>Rule which target all <code>p</code> tag on a page </li>
+                            <li>Rule which targets all tags with an #id</li>
+                            <li>Rules which target all <code>a</code> tags in a #nav</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <div class="panel-title">Rules come in 2 Parts</div>
+                    </div>
+                    <panel-body>
+                        <h4>All CSS rule made of two components</h4>
+                        <table class="table table-striped">
+                            <tr>
+                                <th>SELECTOR</th>
+                                <th>DECLERATION</th>
+                                <tr>
+                                    <td>#page-header</td>
+                                    <td>{font-size:10px}</td>
+                                </tr>
+                            </tr>
+                        </table>
+                    </panel-body>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <panel-title>SELECTORS</panel-title>
+                    </div>
+                    <div class="panel-body">
+                        Selectors can target tag names, ID's, classes and many other things.
+
+                        <dl class="dl-horizontal">
+                            <dt>#header p</dt>
+                            <dd>{decleration}</dd>
+                            <dt>.comment div</dt>
+                            <dd>{decleration}</dd>
+                            <dt>li</dt>
+                            <dd>{decleration}</dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <div class="panel-title">Decleration</div>
+                    </div>
+                    <div class="panel-body">
+                        <h6>Decleration Containes properties and values</h6>
+                        <dl class="dl-horizontal">
+                            <dt>#selector</dt>
+                            <dd>{font-size:10px;}</dd>
+                            <dt>#selector</dt>
+                            <dd>{font-size:10px;color:red;}</dd>
+                            <dt></dt>
+                            <dd></dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section>
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                <h2>Part 5 Inline and Embeded Styles</h2>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <div class="panel-title"></div>
+                            <div class="panel-body"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+</section>
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <h1>Part 6 - External Stylesheets</h1>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <div class="panel-title"></div>
+                    </div>
+                    <div class="panel-body"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <h2>Part 7 CSS Comments and Where to Use them
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <div class="panel-title"></div>
+                        </div>
+                        <div class="panel-body"></div>
+                    </div>
+                </h2>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Part 8 - Targeting Elements with CSS -->
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <h2>Part 8 - Targeting Elements with CSS
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <div class="panel-title"></div>
+                        </div>
+                        <div class="panel-body"></div>
+                    </div>
+                </h2>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Part 9 Targeting Classes and ID's -->
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <header>
+                    <h2> <a href="https://www.youtube.com/watch?v=hrqo_GOwHHs&list=PL4cUxeGkcC9gQeDH6xYhmO-db2mhoTSrT&index=9">
+                        Part 9 Targeting .Classes and #Id's
+                    </a>
+                    </h2>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <div class="panel-title">Classes & ID's</div>
+                            </div>
+                            <div class="panel-body">
+                                <p>Both are the ways to describe the content</p>
+                                <dl class="dl-horizontal">
+                                    <dt>Classes</dt>
+                                    <dd>can be used multiple times on a page</dd>
+                                    <dt>ID's</dt>
+                                    <dd>can be used only once on a page and should be unique</dd>
+                                </dl>
+                            </div>
+                        </div>
+
+                </header>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Part 10 The Cascade and CSS Conflicts -->
+<section>
+    <div class="container">
+        <div class="row">
+            <col-xs-12>
+                <h2><a href="https://www.youtube.com/watch?v=4oPvurjpcNw&list=PL4cUxeGkcC9gQeDH6xYhmO-db2mhoTSrT&index=10">Part 10 The Cascade and CSS Conflicts</a></h2>
+
+            </col-xs-12>
+        </div>
+    </div>
+</section>
+</body>
+</html>
