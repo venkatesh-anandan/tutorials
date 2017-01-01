@@ -18,6 +18,8 @@
 
 
 </header>
+
+
 <section>
     <div class="container">
         <div class="row">
@@ -322,7 +324,7 @@
         </div>
     </div>
 </section>
-<!-- Part 9 Targeting Classes and ID's -->
+<!-- Part 9 Targeting CPlasses and ID's -->
 <section>
     <div class="container">
         <div class="row">
@@ -355,13 +357,321 @@
 <!-- Part 10 The Cascade and CSS Conflicts -->
 <section>
     <div class="container">
+      <div class="container">
         <div class="row">
             <col-xs-12>
                 <h2><a href="https://www.youtube.com/watch?v=4oPvurjpcNw&list=PL4cUxeGkcC9gQeDH6xYhmO-db2mhoTSrT&index=10">Part 10 The Cascade and CSS Conflicts</a></h2>
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <div class="panel-title">What is a Conflit</div>
+                  </div>
+                  <div class="panel-body">
+                    <p>Two selectors with same name and going after the same tags in the document and properties within the two rules that are different from each other one rule which tells span tag with red and other one tell span tag with green then its a conflict. </p>
+                    <p>How the conflict is resolved</p>
+                    <ul>
+                      <li>First the top to botom rule is applied</li>
+                      <ul>
+                        <li>External Style</li>
+                        <li>Internal Style</li>
+                        <li>Inline Style</li>
+                      </ul>
+                      <li>Bottomost will be applied</li>
+                    </ul>
+                  </div>
+                </div>
 
             </col-xs-12>
         </div>
     </div>
+    </div>
 </section>
+<!-- Lesson 11 Inhertance -->
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <h2><a href="https://www.youtube.com/watch?v=ZMpaebQ3n6A&index=11&list=PL4cUxeGkcC9gQeDH6xYhmO-db2mhoTSrT"> Inheritance</a></h2>
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <div class="panel-title">Inheritance Tree</div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+</section>
+<section>
+  <div class="row">
+    <div class="col-xs-12">
+      <h2>Lesson 12 Selector Specificity</h2>
+
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <div class="panel-title">Conflicts and Cascade</div>
+      </div>
+      <div class="panel-body">
+        <ul>
+          <li>#main-content p{color:black;}  - This rule wins</li>
+          <li>p{color:red;}</li>
+      </ul>
+
+
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <div class="panel-title">How Specific?</div>
+      </div>
+      <div class="panel-body">
+        <dl class="dl-horizontal">
+          <dt>ID's</dt>
+          <dd>100points</dd>
+          <dt>Classes</dt>
+          <dd>10 points</dd>
+          <dt>Elements</dt>
+          <dd>1 Points</dd>
+        </dl>
+
+      </div>
+    </div>
+    </div>
+  </div>
+</section>
+<!-- Select with most number of points wins -->
+<div class="container">
+  <!-- Lesson 13 - The important decleration -->
+  <section>
+    <div class="row">
+      <div class="col-xs-12">
+        <h2>Lesson 13 The IMPORTANT decleration</h2>
+
+      <div class="panel panel-default">
+        <div class="panel-heading">The !important exception</div>
+        <div class="panel-body">
+          When an important rule is used on a style declaration, this declaration overrides any other declarations.
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+  <!-- Lesson 14 Targetting Multiple Elements -->
+  <section>
+    <div class="row">
+      <div class="col-xs-12">
+        <h2>4 Lesson 1Targeting multiple elements</h2>
+        <div class="panel panel-default">
+          <div class="panel-title">Targeting multiple elements</div>
+        </div>
+        <div class="panel-body">
+          <p>use <code>,</code> to target multiple elements</p>
+          <pre>
+            p,span{
+              color:#ffffff
+            }
+          </pre>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Lesson 15 - Descendent Selectors -->
+  <section>
+    <div class="row">
+      <div class="col-xs-12">
+        <h2>Descendent Selectors</h2>
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <div class="panel-title">Lesson 15 Descendents</div>
+          </div>
+          <div class="panel-body">
+            <pre>
+              #main-content p{
+                color:red;
+              }
+            </pre>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- Lesson 16 Child Selectors -->
+  <section>
+    <div class="row">
+      <div class="col-xs-12">
+        <h1>Lesson 16 Child Selector</h1>
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <div class="panel-title">
+            Lesson 16 Child Selector
+            </div>
+          </div>
+          <div class="panel-body">
+            Use <code>&gt;</code> to select direct children
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Lesson 17 Adjacent Selectors -->
+  <section>
+    <div class="row">
+      <div class="col-xs-12">
+        <h2>Lesson 17 Adjacent Selectors</h2>
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <div class="panel-title">
+              Adjacent Selectors
+            </div>
+          </div>
+          <div class="panel-body">
+            use <code>+</code> operator for selecting the next element in the css.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Lesson 18 Attribute Selectors -->
+  <section>
+    <div class="row">
+      <div class="col-xs-12">
+        <h2>Lesson 18 Attribute Selectors</h2>
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <div class="panel-title">Att</div>
+          </div>
+          <div class="panel-body">
+            <p>
+              Attributes provide additional information about the tags.
+              Attribute selectors can help us target those elements which do not have a class, ID, or any way of finding it via child or descendant selectors.
+            </p>
+            <p>use <code>[]</code> along with tag and attribute name helps in selecting the particular attribute</p>
+            <p>to match particular class name we can use along with value eg. a[title="Search Engine"]</p>
+            <p>we can use <code>~=</code> to match any selector which contains the class along with other class</p>
+            <p>use $ sign</p>
+            <dl>
+              <dt>~=</dt>
+              <dd></dd>
+              <dt>$=</dt>
+              <dd></dd>
+              <dt>*=</dt>
+              <dd></dd>
+              <dt>^= start with </dt>
+              <dd>a[href^="http"]{color:red;}</dd>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- section 19 seudo selectors -->
+  <section>
+    <div class="row">
+      <div class="col-xs-12">
+        <h2>Pseudo Selectors</h2>
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <div class="panel-title">Pseudo Classes?</div>
+          </div>
+        <div class="panel-body">
+          <ul>
+            <li>Special keywords that go after selectors</li>
+            <li>They can be used to target:</li>
+            <ul>
+              <li>special behavioural states</li>
+              <li>Advanced structural elements</li>
+            </ul>
+          </ul>
+        </div>
+        </div>
+
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <div class="panel-title">Pseudo Class Groups</div>
+        </div>
+        <div class="panel-body">
+          <table class="table table-default">
+            <thead>
+              <tr>
+                <th>Dynamic</th>
+                <th>Structural</th>
+              </tr>
+              <tr>
+                <td><ul>
+                  <li>Based on Behaviour</li>
+                  <div>e.g. Hover effects</div>
+                </ul></td>
+                <td>
+                  <ul>
+                    <li>
+                      Advanced Structural
+                      <div>
+                        e.g Hover Effects
+                      </div>
+                    </li>
+                  </ul>
+                </td>
+              </tr>
+            </thead>
+          </table>
+        </div>
+      </div>
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <div class="panel-title">Dynamic Pseudo Classes</div>
+        </div>
+        <div class="panel-body">
+          <p>Allow us to style an element in relation to user actions, such as</p>
+          <ul>
+            <li>Whether a link is hovered over</li>
+            <li>Whether a button is being pressed</li>
+            <li>Whether a tick box has been checked</li>
+          </ul>
+        </div>
+      </div>
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <div class="panel-title">Structural Pseudo Classes</div>
+        </div>
+        <div class="panel-body">
+          <p>Allow us to style elements based on advanced structural techniques not possible from ordinary CSS selectors</p>
+          <ul>
+            <li>the 5th &lt;li&gt; tag in a list</li>
+            <li>A parent tag that has no children</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+  <!-- Lesson 20 Hover, Active and Visited Effects -->
+  <section>
+    <div class="row">
+      <div class="col-xs-12">
+        <h2>Lesson 20 Hover, Active, Visited Effects</h2>
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <div class="panel-title">hover, active, visited pseudo classes</div>
+          </div>
+          <div class="panel-body">
+            <pre>
+              <ul>
+                <li>a:hover{color:red}
+                </li>
+                <li>a:active{color:orange}</li>
+                <li>a:visited{color:purple}</li>
+              </ul>
+            </pre>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+</div>
+
+
 </body>
 </html>
